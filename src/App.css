@@ -1,10 +1,44 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@300;400;500;600;700;800&family=Raleway:wght@100&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Inter', sans-serif; 
+}
+
+/* CSS or in your component's style tag */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+
+.range-bar {
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(to right, red, yellow, orange, green);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sticky__header{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: white;
+  box-shadow: 3px 3px -8px 3px #ddd;
 }
 
 @media (prefers-reduced-motion: no-preference) {
