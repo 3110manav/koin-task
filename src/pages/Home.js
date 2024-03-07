@@ -30,25 +30,25 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row px-2 lg:px-12 bg-gray-100 pb-8 relative sm:overflow-x-hidden">
+      <div className="flex flex-col lg:flex-row px-2 lg:px-12 bg-gray-100 pb-8 relative sm:overflow-x-hidden sm:w-full">
         {/* Left div  */}
-        <div className="lg:w-3/4 sm:w-full mr-3 ml-3 my-5"> {/* relative*/}
+        <div className="lg:w-3/4 sm:w-full mr-3 ml-3 my-5">
+          {" "}
+          {/* relative*/}
           <div className="text-sm text-gray-500 flex items-center">
             Cryptocurrencies{" "}
             <MdKeyboardDoubleArrowRight className="mx-2 my-1" />
             <span className="text-black font-semibold text-sm">Bitcoin</span>
           </div>
-
           {/* Crypto Details Card */}
           <div className="mt-5">
             <CryptoCaard />
           </div>
-
           {/* Muliple Navigation Div */}
           <div className="pointer">
-            <div className="mt-[50px] border-b border-solid border-[#0066ff34] overflow-x scrollbar-hidden">
+            <div className="mt-[50px] border-b border-solid border-[#0066ff34] sm:overflow-x scrollbar-hidden flex overflow-x-auto">
               <button
-                className={` ${
+                className={`${
                   tab === "overview" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -60,7 +60,7 @@ const Home = () => {
                 Overview
               </button>
               <button
-                className={` ${
+                className={`${
                   tab === "fundamentals" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -72,7 +72,7 @@ const Home = () => {
                 Fundamentals
               </button>
               <button
-                className={` ${
+                className={`${
                   tab === "news" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -84,7 +84,7 @@ const Home = () => {
                 News Insights
               </button>
               <button
-                className={` ${
+                className={`${
                   tab === "sentiments" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -96,7 +96,7 @@ const Home = () => {
                 Sentiments
               </button>
               <button
-                className={` ${
+                className={`${
                   tab === "team" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -108,7 +108,7 @@ const Home = () => {
                 Team
               </button>
               <button
-                className={` ${
+                className={`${
                   tab === "technicals" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -120,7 +120,7 @@ const Home = () => {
                 Technicals
               </button>
               <button
-                className={` ${
+                className={`${
                   tab === "tokenomics" &&
                   "border-b border-solid border-blue-800 text-blue-800 font-bold"
                 } py-2 px-5 mr-5 text-[16px] leading-7 font-semibold`}
@@ -144,7 +144,9 @@ const Home = () => {
         </div>
 
         {/* Right div  */}
-        <div className="lg:w-1/4 my-5 lg:ml-0 sm:w-full"> {/* sticky top-0 bottom-0 right-0 float-right*/}
+        <div className="lg:w-1/4 my-5 lg:ml-0 sm:w-full">
+          {" "}
+          {/* sticky top-0 bottom-0 right-0 float-right*/}
           <RightSection />
         </div>
       </div>

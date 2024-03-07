@@ -1,4 +1,4 @@
-import React, { useRef, forwardRef, useState, } from "react";
+import React, { useRef, forwardRef, useState } from "react";
 import {
   MdInfo,
   MdKeyboardArrowRight,
@@ -9,7 +9,6 @@ import { CgNotes } from "react-icons/cg";
 import { BsGraphUpArrow } from "react-icons/bs";
 import investing from "../../assets/images/investing.jpg";
 import trading from "../../assets/images/trading.jpg";
-// import { Bar } from "react-chartjs-2";
 
 const Sentiments = forwardRef((props, ref) => {
   const sentimentsRef = useRef();
@@ -22,6 +21,34 @@ const Sentiments = forwardRef((props, ref) => {
   const prevSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + 3) % 2);
   };
+
+  // // eslint-disable-next-line no-undef
+  // const data = {
+  //   labels: ['yes', 'no', 'ok'],
+  //   datasets: [{
+  //     label: 'My First Dataset',
+  //     data: [65, 59, 80],
+  //     backgroundColor: [
+  //       'rgba(255, 99, 132, 0.2)',
+  //       'rgba(255, 159, 64, 0.2)',
+  //       'rgba(255, 205, 86, 0.2)',
+  //     ],
+  //     borderColor: [
+  //       'rgb(255, 99, 132)',
+  //       'rgb(255, 159, 64)',
+  //       'rgb(255, 205, 86)',
+  //     ],
+  //     borderWidth: 1
+  //   }]
+  // };
+  
+  // const options = {
+  //   scales: {
+  //     x: {
+  //       beginAtZero: true
+  //     }
+  //   }
+  // };
 
   return (
     <>
@@ -162,13 +189,15 @@ const Sentiments = forwardRef((props, ref) => {
             <div className="grid-cols-9">
               {/* <canvas ref={chartRef}></canvas> */}
               {/* <Bar data={data} options={options} /> */}
+              {/* <Bar data={data} options={options} /> */}
+              {/* <Pie data={data} options={options} /> */}
             </div>
           </div>
         </div>
       </div>
       <div className="w-full bg-white rounded-md p-8 mt-5">
         <h2 className="text-2xl font-bold">About Bitcoin</h2>
-        <div className="mt-5 pb-3 border-b ">
+        <div className="mt-5 pb-3 border-b">
           <p className="font-bold">What is Bitcoin ?</p>
           <p className="mt-2">
             Bitcoin is the world's first and most well-known cryptocurrency.
@@ -193,7 +222,7 @@ const Sentiments = forwardRef((props, ref) => {
 
         <h2 className="text-2xl font-bold mt-7">Already Holding Bitcoin?</h2>
         <div className="flex mt-4 gap-9 border-b pb-4">
-          <div className="flex bg-gradient-to-br from-green-400 to-indigo-600 rounded-lg w-1/2 p-2">
+          <div className="flex bg-gradient-to-br from-green-400 to-indigo-600 rounded-lg lg:w-1/2 md:w-1/2 p-2 sm:w-full">
             <div className="w-2/5 p-2">
               <img
                 src={investing}
@@ -202,12 +231,19 @@ const Sentiments = forwardRef((props, ref) => {
               />
             </div>
             <div className="w-3/5 p-4 flex-grow">
-             <h4 className="tracking-wider text-2xl font-bold text-white">Calculate your Profits </h4>
-             <button type="button" className="mt-6 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold rounded-lg text-sm px-5 py-1.5 me-2 mb-2 flex items-center">Check Now <GoArrowRight className="font-semibold ml-1"/></button>
+              <h4 className="tracking-wider text-2xl font-bold text-white">
+                Calculate your Profits{" "}
+              </h4>
+              <button
+                type="button"
+                className="mt-6 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold rounded-lg text-sm px-5 py-1.5 me-2 mb-2 flex items-center"
+              >
+                Check Now <GoArrowRight className="font-semibold ml-1" />
+              </button>
             </div>
           </div>
 
-          <div className="flex bg-gradient-to-br from-orange-400 to-red-500 rounded-lg w-1/2 p-2">
+          <div className="flex bg-gradient-to-br from-orange-400 to-red-500 rounded-lg lg:w-1/2 md:w-1/2 p-2 sm:w-full mt-4 sm:mt-0">
             <div className="w-2/5 p-2">
               <img
                 src={trading}
@@ -216,13 +252,27 @@ const Sentiments = forwardRef((props, ref) => {
               />
             </div>
             <div className="w-3/5 p-4 flex-grow">
-             <h4 className="tracking-wider text-2xl font-bold text-white">Calculate your tax liablity </h4>
-             <button type="button" className="mt-6 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold rounded-lg text-sm px-5 py-1.5 me-2 mb-2 flex items-center">Check Now <GoArrowRight className="font-semibold ml-1"/></button>
+              <h4 className="tracking-wider text-2xl font-bold text-white">
+                Calculate your tax liability{" "}
+              </h4>
+              <button
+                type="button"
+                className="mt-6 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold rounded-lg text-sm px-5 py-1.5 me-2 mb-2 flex items-center"
+              >
+                Check Now <GoArrowRight className="font-semibold ml-1" />
+              </button>
             </div>
           </div>
         </div>
-        <p className="mt-4 font-semibold text-gray-700">Odio euismod lacinia at quis risus sed vulputate sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua hdus siue euw ieuh. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Aliquam ut porttitor leo a. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Etiam tempor orci eu lobortis elementum nibh tellus. Id donec ultrices tincidunt arcu non sodales neque. </p>
+
+        <p className="mt-4 font-semibold text-gray-700">
+          Odio euismod lacinia at quis risus sed vulputate sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua hdus siue euw ieuh. Ligula
+          ullamcorper malesuada proin libero nunc consequat interdum varius sit.
+          Aliquam ut porttitor leo a. Massa tincidunt nunc pulvinar sapien et
+          ligula ullamcorper. Etiam tempor orci eu lobortis elementum nibh
+          tellus. Id donec ultrices tincidunt arcu non sodales neque.{" "}
+        </p>
       </div>
     </>
   );

@@ -16,9 +16,10 @@ const Team = forwardRef((props, ref) => {
           odio. Eu volutpat odio.
         </p>
       </div>
+     
       <div className="flex flex-col">
-        <div className="bg-blue-100 w-full flex mt-5 rounded-lg">
-          <div className="w-1/5 p-2 mx-5">
+      <div className="bg-blue-100 w-full flex flex-col items-center mt-5 rounded-lg sm:flex-row">
+          <div className="w-full sm:w-1/5 p-2 mx-5">
             <div className="px-3 py-5 h-[200px] w-[200px]">
               <img
                 src={t2}
@@ -26,14 +27,14 @@ const Team = forwardRef((props, ref) => {
                 className="rounded-lg h-full w-full object-cover"
               />
             </div>
-            <div className="flex flex-col items-center">
-              <p className="text-lg font-bold">Elina Williams</p>
+            <div className="flex flex-col items-center sm:items-start mt-3">
+              <p className="text-lg font-bold">Gracy Meranda</p>
               <p className="text-gray-400 font-semibold">Designation here</p>
             </div>
           </div>
-          <div className="w-4/5 p-4 mt-10 flex-grow">
+          <div className="w-full sm:w-4/5 p-4 mt-5 sm:mt-0 flex-grow">
             <p className="tracking-wide font-medium">
-              Viverra justo nec ultrices dui sapien eget mi proin.Eleifend quam
+              Viverra justo nec ultrices dui sapien eget mi proin. Eleifend quam
               adipiscing vitae proin sagittis nisl. Ornare quam viverra orci
               sagittis eu volutpat odio facilisis. Phasellus vestibulum lorem
               sed risus ultricies tristique. Augue neque gravida in fermentum
@@ -45,8 +46,8 @@ const Team = forwardRef((props, ref) => {
           </div>
         </div>
 
-        <div className="bg-blue-100 w-full flex mt-5 rounded-lg">
-          <div className="w-1/5 p-2 mx-5">
+        <div className="bg-blue-100 w-full flex flex-col items-center mt-5 rounded-lg sm:flex-row">
+          <div className="w-full sm:w-1/5 p-2 mx-5">
             <div className="px-3 py-5 h-[200px] w-[200px]">
               <img
                 src={t1}
@@ -54,14 +55,14 @@ const Team = forwardRef((props, ref) => {
                 className="rounded-lg h-full w-full object-cover"
               />
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center sm:items-start mt-3">
               <p className="text-lg font-bold">Jhon Smith</p>
               <p className="text-gray-400 font-semibold">Designation here</p>
             </div>
           </div>
-          <div className="w-4/5 p-4 mt-10 flex-grow">
+          <div className="w-full sm:w-4/5 p-4 mt-5 sm:mt-0 flex-grow">
             <p className="tracking-wide font-medium">
-              Viverra justo nec ultrices dui sapien eget mi proin.Eleifend quam
+              Viverra justo nec ultrices dui sapien eget mi proin. Eleifend quam
               adipiscing vitae proin sagittis nisl. Ornare quam viverra orci
               sagittis eu volutpat odio facilisis. Phasellus vestibulum lorem
               sed risus ultricies tristique. Augue neque gravida in fermentum
@@ -72,8 +73,9 @@ const Team = forwardRef((props, ref) => {
             </p>
           </div>
         </div>
-        <div className="bg-blue-100 w-full flex mt-5 rounded-lg">
-          <div className="w-1/5 p-2 mx-5">
+
+        <div className="bg-blue-100 w-full flex flex-col items-center mt-5 rounded-lg sm:flex-row">
+          <div className="w-full sm:w-1/5 p-2 mx-5">
             <div className="px-3 py-5 h-[200px] w-[200px]">
               <img
                 src={t3}
@@ -81,14 +83,14 @@ const Team = forwardRef((props, ref) => {
                 className="rounded-lg h-full w-full object-cover"
               />
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center sm:items-start mt-3">
               <p className="text-lg font-bold">Ananya D'souza</p>
               <p className="text-gray-400 font-semibold">Designation here</p>
             </div>
           </div>
-          <div className="w-4/5 p-4 mt-10 flex-grow">
+          <div className="w-full sm:w-4/5 p-4 mt-5 sm:mt-0 flex-grow">
             <p className="tracking-wide font-medium">
-              Viverra justo nec ultrices dui sapien eget mi proin.Eleifend quam
+              Viverra justo nec ultrices dui sapien eget mi proin. Eleifend quam
               adipiscing vitae proin sagittis nisl. Ornare quam viverra orci
               sagittis eu volutpat odio facilisis. Phasellus vestibulum lorem
               sed risus ultricies tristique. Augue neque gravida in fermentum
