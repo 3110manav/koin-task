@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row px-2 lg:px-12 bg-gray-100 pb-8 relative sm:overflow-x-hidden sm:w-full">
+      <div className=" w-full flex flex-col lg:flex-row px-2 lg:px-12 bg-gray-100 pb-8 relative sm:overflow-x-hidden md:w-full sm:w-full">
         {/* Left div  */}
         <div className="lg:w-3/4 sm:w-full mr-3 ml-3 my-5">
           {" "}

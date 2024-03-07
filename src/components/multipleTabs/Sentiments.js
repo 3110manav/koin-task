@@ -41,7 +41,7 @@ const Sentiments = forwardRef((props, ref) => {
   //     borderWidth: 1
   //   }]
   // };
-  
+
   // const options = {
   //   scales: {
   //     x: {
@@ -64,7 +64,7 @@ const Sentiments = forwardRef((props, ref) => {
 
           <div className="mt-3 relative overflow-hidden">
             <div
-              className="flex transition-transform duration-300 ease-in-out"
+              className="flex overflow-x-auto transition-transform duration-300 ease-in-out"
               style={{
                 transform: `translateX(${-currentIndex * 25}%)`,
                 width: "200%",
@@ -161,6 +161,7 @@ const Sentiments = forwardRef((props, ref) => {
                   </div>
                 </div>
               </div>
+
             </div>
             <button
               className="absolute top-[50%] left-0 bottom-[50%] ml-2 flex items-center justify-center bg-gray-200 opacity-90 hover:opacity-100 rounded-[50%] h-[40px] w-[40px] "
@@ -221,7 +222,7 @@ const Sentiments = forwardRef((props, ref) => {
         </div>
 
         <h2 className="text-2xl font-bold mt-7">Already Holding Bitcoin?</h2>
-        <div className="flex mt-4 gap-9 border-b pb-4">
+        <div className="flex flex-col mt-4 gap-4 border-b pb-4 sm:flex-row">
           <div className="flex bg-gradient-to-br from-green-400 to-indigo-600 rounded-lg lg:w-1/2 md:w-1/2 p-2 sm:w-full">
             <div className="w-2/5 p-2">
               <img
@@ -232,7 +233,7 @@ const Sentiments = forwardRef((props, ref) => {
             </div>
             <div className="w-3/5 p-4 flex-grow">
               <h4 className="tracking-wider text-2xl font-bold text-white">
-                Calculate your Profits{" "}
+                Calculate your Profits
               </h4>
               <button
                 type="button"
@@ -253,7 +254,7 @@ const Sentiments = forwardRef((props, ref) => {
             </div>
             <div className="w-3/5 p-4 flex-grow">
               <h4 className="tracking-wider text-2xl font-bold text-white">
-                Calculate your tax liability{" "}
+                Calculate your tax liability
               </h4>
               <button
                 type="button"

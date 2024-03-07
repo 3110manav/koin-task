@@ -50,7 +50,7 @@ function CryptoCard() {
           Bitcoin
           <span className="text-gray-500 text-lg ml-2">BTC</span>
         </p>
-        <div className={`bg-${window.innerWidth < 640 ? "gray-100" : "gray-500"} text-white ml-5 p-2 rounded-md`}>
+        <div className="text-white ml-5 p-2 rounded-md bg-gray-500">
           Rank #1
         </div>
       </div>
