@@ -8,7 +8,6 @@ const Tokenomics = forwardRef((props,ref) => {
       <div className='mt-7'>
         <h4 className='text-lg font-semibold'>Initial Distribution</h4>
         <div>
-          CHARTT
         </div>
         <div className='mt-2'>
           <p className='font-semibold text-gray-700'>
